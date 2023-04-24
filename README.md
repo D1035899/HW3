@@ -7,7 +7,7 @@
 
 - 目標網站: [https://course.fcu.edu.tw/](https://course.fcu.edu.tw/)
 - 作業網站: [https://d1035899.github.io/HW3/](https://d1035899.github.io/HW3/)
-- 說明網站: [https://d1035899.github.io/HW3/blob/master/README.md](https://d1035899.github.io/HW3/blob/master/README.md)
+- 說明網站: [https://github.com/D1035899/HW3/blob/master/README.md](https://github.com/D1035899/HW3/blob/master/README.md)
 - Code Repo: [https://github.com/D1035899/HW3](https://github.com/D1035899/HW3)
 
 ---
