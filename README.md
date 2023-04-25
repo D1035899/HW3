@@ -1,4 +1,4 @@
-# 作業3 詐欺遊戲-釣魚網站
+﻿# 作業3 詐欺遊戲-釣魚網站
 
 `
 姓名: 張牧翔
@@ -18,11 +18,13 @@
   - [目錄](#目錄)
   - [目標網頁介紹](#目標網頁介紹)
   - [修改code講解](#修改code講解)
+    - [增加flex與grid排版](#增加flex與grid排版)
     - [刪除不需要的當案](#刪除不需要的當案)
     - [Radio button 轉換頁面](#radio-button-轉換頁面)
     - [下載檔案不完全](#下載檔案不完全)
     - [驗證碼](#驗證碼)
     - [使用者輸入帳號密碼之後續](#使用者輸入帳號密碼之後續)
+  - [與原網站的差異](#與原網站的差異)
   - [心得](#心得)
 
 ---
@@ -34,6 +36,29 @@
 ---
 
 ## 修改code講解
+
+### 增加flex與grid排版
+
+- flex排版
+
+  - 我在網頁上方的title裡加入了flex排版，但是如果沒有做任何的處理的話，上面標題的位置會跑至最左邊，這是因為flex的預設排版是由左到右、上到下，因此我在`#topContent`裡面加入了`flex-direction: row-reverse;`來讓flex的row起始位置變成由右到左，這樣一來標題就會回到最右邊了
+   ![flex](files/Images/flex.png)
+  >單純增加`<display: flex;>`後的變化
+
+   ![flex_fix](files/Images/flex_fix.png)
+  >增加flex排版的css片段
+- grid排版
+
+  - 透過將網頁上方的細項連結的`<td>`元素增加一個class名為gridLayout，並且在css裡增加相關的selector，且設定網格的排版位置以及格與格之間的寬度，來達到跟目標網站一樣的效果。如果只單純增加`display: grid;`，格子的起始位置會在最左邊，且不設定的話會是單行多列，因此要使用`grid-template-columns`來設定有幾行，並且透過`grid-column-gap`設定格線寬度，還有透過`justify-content`調整整體layout的位置
+
+   ![flex](files/Images/grid.png)
+   >單純增加`<display: grid;>`後的變化
+
+   ![gird_fix](files/Images/grid_fix.png)
+   >增加grid排版的css片段
+
+   ![gird_fix](files/Images/grid_class.png)
+   >於html新增的class: gridLayout，以便控制grid的使用
 
 ### 刪除不需要的當案
 
@@ -79,6 +104,18 @@
 ![systemcall](files/Images/systemcall.png)
 ![systemcall2](files/Images/systamcall2.png)
 >網頁提示(中/英)
+
+---
+
+## 與原網站的差異
+
+我所復課的網頁實際上差異非常的小，只差在登入帳號上的排版有些微的不同，原網站的驗證碼刷新按鈕是貼齊輸入框，但我的並沒有，估計是因為我轉換成button的形式去寫。另外，radio button之間的寬度也有些微的不同，但我不太確定要如何去做修改。
+
+![fake](files/Images/fake.png)
+![origin](files/Images/origin.png)
+
+>上圖: 復刻網站
+>下圖:  原始網站
 
 ---
 

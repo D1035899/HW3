@@ -14,6 +14,8 @@ h2 {
 }
 
 #topContent {
+  display: flex;
+  flex-direction: row-reverse;
   background-image: url("./Images/login_banner.jpg");
   background-repeat: no-repeat;
   text-align: right;
@@ -74,6 +76,13 @@ h2 {
 }
 #ctl00_Login1_ImageButton1 :hover {
   cursor: pointer;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 4px;
+  justify-content: end;
 }
 
 .word-sub-title {
