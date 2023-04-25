@@ -114,8 +114,8 @@
 ![fake](files/Images/fake.png)
 ![origin](files/Images/origin.png)
 
->上圖: 復刻網站
->下圖:  原始網站
+>左圖: 復刻網站
+>右圖:  原始網站
 
 ---
 
